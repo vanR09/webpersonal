@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/sobre.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Vanessa Romero</h2>   
+        <p>Naci en Toluca, Estado de México, Actualmente estudiante de la UTVT </p>
+        <p>Durante mi formación academica he realizado proyectos como paginas web, geolocalizadores y aplicaciones para la gestion de documentos. Cabe mencionar que tambien cuento con el titulo de Técnico Químico Industrial, asi mismo cuento con un nivel B1 en Inglés</p>
+    </div>
+</div>
+{% endblock %}
